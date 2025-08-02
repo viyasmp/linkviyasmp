@@ -1,48 +1,87 @@
 <!DOCTYPE html>
 <html lang="id">
 <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>VIYASMP - Minecraft Server</title>
-    <link rel="stylesheet" href="style.css" />
-    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700&family=Nunito:wght@300;600&display=swap" rel="stylesheet">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>VIYASMP – Server Minecraft Survival Seru Abis!</title>
+  <link rel="stylesheet" href="style.css">
+  <meta name="description" content="Bergabung di VIYASMP! Server survival tanpa grief, ekonomi keren, event mingguan, dan komunitas chill. Java & Bedrock 1.20.1-1.21+">
+  <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700;900&family=Nunito:wght@300;400;700&display=swap" rel="stylesheet">
 </head>
 <body>
-    <main>
-        <!-- Hero -->
-        <section class="hero">
-            <h1 class="glitch" data-text="VIYASMP">VIYASMP</h1>
-            <p class="subtitle">Server Survival bebas Grief • Java & Bedrock</p>
-            <div class="floating-blocks"></div>
-        </section>
+  <!-- Partikel background -->
+  <canvas id="particles"></canvas>
 
-        <!-- Info -->
-        <section class="info">
-            <h2>Info Server</h2>
-            <div class="cards">
-                <div class="card"><strong>IP Java</strong><span>coming soon</span></div>
-                <div class="card"><strong>IP Bedrock</strong><span>coming soon</span></div>
-                <div class="card"><strong>Versi</strong><span>1.20.1 – 1.21+</span></div>
-            </div>
-        </section>
+  <!-- HERO -->
+  <header id="hero">
+    <h1 class="logo glitch" data-text="VIYASMP">VIYASMP</h1>
+    <p class="tagline">Server Survival Bebas Grief • Event Mingguan • Komunitas Asik</p>
+    <a href="#join" class="cta-btn">Gabung Sekarang</a>
+  </header>
 
-        <!-- Links -->
-        <section class="links">
-            <h2>Bergabung dengan Komunitas</h2>
-            <a href="https://discord.gg/MtNhxfaN" target="_blank" class="btn discord">
-                <i></i>Discord
-            </a>
-            <a href="https://chat.whatsapp.com/Dotv2JoLGkT7Z6p07LRvZL?mode=ac_t" target="_blank" class="btn whatsapp">
-                <i></i>WhatsApp
-            </a>
-        </section>
-    </main>
+  <!-- COUNTDOWN -->
+  <section id="countdown">
+    <h2>Reset Dunia Dalam</h2>
+    <div id="timer" class="timer">Loading...</div>
+  </section>
 
-    <footer>
-        <p>&copy; 2025 VIYASMP • Dibuat dengan ❤️ oleh komunitas</p>
-        <p class="tag">#kenely❤️</p>
-    </footer>
+  <!-- FITUR -->
+  <section id="features">
+    <h2>Kenapa Harus VIYASMP?</h2>
+    <div class="feature-grid">
+      <div class="feature-card" data-aos="fade-up">
+        <span class="icon">🏗️</span>
+        <h3>Build bebas</h3>
+        <p>Proteksi otomatis, anti-grief, dan rollback instan.</p>
+      </div>
+      <div class="feature-card" data-aos="fade-up" data-aos-delay="100">
+        <span class="icon">💰</span>
+        <h3>Economy Seru</h3>
+        <p>Jualan item, buka toko, dan naikkan rank!</p>
+      </div>
+      <div class="feature-card" data-aos="fade-up" data-aos-delay="200">
+        <span class="icon">🎉</span>
+        <h3>Event Mingguan</h3>
+        <p>Mini-games, turnamen PvP, dan hadiah menarik.</p>
+      </div>
+      <div class="feature-card" data-aos="fade-up" data-aos-delay="300">
+        <span class="icon">🌍</span>
+        <h3>Cross-Platform</h3>
+        <p>Java & Bedrock satu dunia. Semua bisa main!</p>
+      </div>
+    </div>
+  </section>
 
-    <script src="script.js"></script>
+  <!-- INFO SERVER -->
+  <section id="info">
+    <h2>Info Server</h2>
+    <div class="info-grid">
+      <div class="info-item"><span>Java IP</span><strong>soon</strong></div>
+      <div class="info-item"><span>Bedrock IP</span><strong>soon</strong></div>
+      <div class="info-item"><span>Port Bedrock</span><strong>19132</strong></div>
+      <div class="info-item"><span>Versi</span><strong>1.20.1 – 1.21.x</strong></div>
+    </div>
+  </section>
+
+  <!-- JOIN -->
+  <section id="join">
+    <h2>Mulai Petualanganmu!</h2>
+    <div class="social-wrap">
+      <a href="https://discord.gg/MtNhxfaN" target="_blank" class="btn discord">
+        <span>Discord</span>
+      </a>
+      <a href="https://chat.whatsapp.com/Dotv2JoLGkT7Z6p07LRvZL" target="_blank" class="btn whatsapp">
+        <span>WhatsApp</span>
+      </a>
+    </div>
+  </section>
+
+  <footer>
+    <p>&copy; 2025 VIYASMP</p>
+    <p class="tag">#kenely❤️</p>
+  </footer>
+
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script src="script.js"></script>
 </body>
-</html>
+</html> 
